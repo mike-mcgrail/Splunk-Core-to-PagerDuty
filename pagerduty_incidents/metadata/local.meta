@@ -1,0 +1,5 @@
+[alert_actions/pagerduty]
+version = 7.2.5.1
+
+[app/install/is_configured]
+version = 7.2.5.1

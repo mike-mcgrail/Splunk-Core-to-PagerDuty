@@ -1,0 +1,29 @@
+<form class="form-horizontal form-complex">
+    <div class="control-group">
+        <label class="control-label" for="pagerduty_integration_url">Integration URL</label>
+
+        <div class="controls">
+            <input type="text" name="action.pagerduty.param.integration_url_override" id="pagerduty_integration_url" placeholder="Optional" />
+            <span class="help-block">Override the global Pagerduty Integration URL</span>
+        </div>
+    </div>
+    <div class="control-group">
+        <label class="control-label" for="pagerduty_alert_name">PD Alert Title</label>
+
+        <div class="controls">
+            <input type="text" name="action.pagerduty.param.pagerduty_alert_name" id="pagerduty_alert_name" value="$name$" />
+            <span class="help-block">Override the current Splunk alert name</span>
+        </div>
+    </div>
+
+    <div class="control-group">
+        <label class="control-label">PD Alert Severity</label>
+        <div class="controls controls-fill">
+            <splunk-select name="action.pagerduty.param.pagerduty_alert_severity" value="Critical">
+                <option value="CRITICAL">Critical</option>
+                <option value="WARN">Warning</option>
+            </splunk-select>
+        </div>
+    </div>
+
+</form>
